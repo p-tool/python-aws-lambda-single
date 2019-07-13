@@ -9,10 +9,14 @@ env:
     - AWS_DEFAULT_REGION=ap-northeast-1
     - PYTHONPATH=$TRAVIS_BUILD_DIR:$PYTHONPATH
 
+before_install:
+  - python3 -m venv venv
+  - source venv/bin/activate
+
 install:
+  - pip3 install -r requirements.txt
   - pip3 install awscli
   - pip3 install boto3
-  - pip3 install -r requirements.txt
 
 script:
   # run tests
