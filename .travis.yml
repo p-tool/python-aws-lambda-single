@@ -1,6 +1,6 @@
 language: python
 
-python: '3.6'
+python: '3.7'
 sudo: false
 
 # We don't care about Travis' python versions, we install conda anyway
@@ -11,7 +11,7 @@ env:
 
 before_install:
   - echo "[INFO] skip before install"
-  
+
 install:
   - pip3 install -r "requirements.txt" -t ./ --upgrade
   - pip3 install awscli
