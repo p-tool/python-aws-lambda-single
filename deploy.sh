@@ -1,4 +1,4 @@
-rm function.zip
+# rm function.zip
 # zip function.zip lambda_function.py 
 
 # zip packages
