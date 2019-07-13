@@ -1,1 +1,1 @@
-Pillow==6.1.0
+lambda_packages==0.20.0
