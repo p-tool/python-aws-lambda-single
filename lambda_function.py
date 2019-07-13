@@ -1,5 +1,5 @@
 import logging
-from PIL import Image
+# from PIL import Image
 
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
@@ -8,5 +8,5 @@ logger.info('Loading function')
 
 def lambda_handler(event, context):
     logger.info(event)
-    output = {'purpose': 'Hello World-1'}
+    output = {'purpose': 'Hello World-2'}
     return output
