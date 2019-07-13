@@ -10,13 +10,12 @@ env:
     - PYTHONPATH=$TRAVIS_BUILD_DIR:$PYTHONPATH
 
 before_install:
-  - python3 -m venv venv
-  - source venv/bin/activate
-
+  - echo "[INFO] skip before install"
+  
 install:
-  - pip install -r requirements.txt
-  - pip install awscli
-  - pip install boto3
+  - pip3 install -r "requirements.txt" -t ./ --upgrade
+  - pip3 install awscli
+  - pip3 install boto3
 
 script:
   # run tests
